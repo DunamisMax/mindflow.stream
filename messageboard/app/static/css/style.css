@@ -5,7 +5,7 @@ html {
   padding: 0;
   font-family: "Courier New", Courier, monospace; /* Emphasizing the terminal-like font */
   background-color: #1a1d23; /* Dark background color from Aura */
-  color: #c7c7c7; /* Light grey text for good readability */
+  color: #c7c7c7; /* Light white text for good readability */
   line-height: 1.6;
 }
 
@@ -16,7 +16,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #c7c7c7; /* Vibrant purple for headers */
+  color: #c7c7c7; /* Vibrant white for headers */
 }
 
 /* General container styling */
@@ -40,21 +40,21 @@ textarea,
   padding: 12px;
   margin: 10px 0;
   background-color: #1a1d23; /* Consistent with container background */
-  color: #abb2bf; /* Light grey text */
+  color: #c7c7c7; /* Light white text */
   border: 1px solid #c7c7c7; /* Accent border color */
   border-radius: 5px;
 }
 
 .submit-btn {
-  background-color: #c7c7c7; /* Bright green for buttons */
+  background-color: #c7c7c7; /* Bright white for buttons */
   color: #282c34; /* Dark text for contrast */
   font-weight: bold;
 }
 
 .submit-btn:hover,
 .submit-btn:focus {
-  background-color: #c7c7c7; /* Accent color for hover/focus */
-  color: #ffffff;
+  background-color: #808080; /* Accent color for hover/focus */
+  color: #c7c7c7;
 }
 
 /* Error messages styling */
@@ -70,11 +70,11 @@ textarea,
 .note,
 .placeholder {
   background-color: #1a1d23; /* Dark background for notes */
-  color: #c7c7c7; /* Light grey text for readability */
+  color: #c7c7c7; /* Light white text for readability */
   padding: 15px;
   border-radius: 5px;
   margin-bottom: 15px;
-  border: 1px solid #c7c7c7; /* Bright blue border for notes */
+  border: 1px solid #c7c7c7; /* Bright white border for notes */
 }
 
 .note p,
@@ -103,7 +103,7 @@ footer {
 }
 
 .pagination a {
-  color: #c7c7c7; /* Bright blue for pagination links */
+  color: #c7c7c7; /* Bright white for pagination links */
   text-decoration: none;
 }
 

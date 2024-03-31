@@ -13,7 +13,7 @@ def index():
         new_note = Note(text=form.comment.data)
         db.session.add(new_note)
         db.session.commit()
-        flash('Your comment has been added!', 'success')
+        flash('Your thought has been added!', 'success')
         return redirect(url_for('main.index'))
 
     # Implementing simple limit without pagination controls for the homepage
@@ -39,4 +39,4 @@ def post_comment():
     new_note = Note(text=data['text'])
     db.session.add(new_note)
     db.session.commit()
-    return jsonify({'message': 'Comment added successfully!', 'id': new_note.id}), 201
+    return jsonify({'message': 'Thought added successfully!', 'id': new_note.id}), 201
