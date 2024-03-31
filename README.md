@@ -59,7 +59,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - [@YourTwitter](https://twitter.com/YourTwitter)
+Your Name - [@dunamismax](https://twitter.com/dunamismax)
 
 Project Link: [https://github.com/DunamisMax/mindflow.stream](https://github.com/DunamisMax/mindflow.stream)
 
