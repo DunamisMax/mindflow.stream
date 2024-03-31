@@ -41,3 +41,69 @@ ENV/
 *.bak
 *.swp
 *.tmp
+
+# Database migration files
+migrations/
+
+# Distribution / packaging
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# macOS specific
+.DS_Store
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# Python - Environments
+.python-version
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Log files
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# PyBuilder
+target/
+
+# Certificates
+*.pem
+*.cert
+*.key
+
+# SSH Keys
+*.pem
+*.ppk
