@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>mindflow.stream</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="{{ url_for('static', filename='img/favicon.png') }}"
+    />
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>mindflow.stream</h1>
+      </header>
+      <main>
+        <section id="note-submission">
+          <form id="note-form" method="post">
+            {{ form.hidden_tag() }}
+            <!-- CSRF token rendering -->
+            <div class="form-group">
+              {{ form.comment.label }} {{ form.comment(rows=4,
+              class_="form-control") }}
+              <div class="form-errors"></div>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="submit-btn">Add Comment</button>
+            </div>
+          </form>
+        </section>
+        <section id="notes-display">
+          <div id="notes-container" class="placeholder">Fetching notes...</div>
+        </section>
+        <!-- Pagination Controls -->
+        <nav aria-label="Page navigation">
+          <ul id="pagination" class="pagination">
+            <!-- Pagination Links will be inserted here by JavaScript -->
+          </ul>
+        </nav>
+        <div id="notification" class="notification"></div>
+        <!-- Notification element -->
+      </main>
+      <footer>
+        <p>&copy; 2023 Planet Notes. All rights reserved.</p>
+      </footer>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>

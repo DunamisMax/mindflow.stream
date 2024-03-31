@@ -1,0 +1,132 @@
+/* Reset and base styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace; /* Emphasizing the terminal-like font */
+  background-color: #1a1d23; /* Dark background color from Aura */
+  color: #c7c7c7; /* Light grey text for good readability */
+  line-height: 1.6;
+}
+
+/* Typography enhancements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #c7c7c7; /* Vibrant purple for headers */
+}
+
+/* General container styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content */
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #1a1d23; /* Slightly lighter dark background for contrast */
+  border: 2px solid #c7c7c7; /* Accent color for borders */
+  border-radius: 5px;
+}
+
+/* Forms and buttons */
+textarea,
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  background-color: #1a1d23; /* Consistent with container background */
+  color: #abb2bf; /* Light grey text */
+  border: 1px solid #c7c7c7; /* Accent border color */
+  border-radius: 5px;
+}
+
+.submit-btn {
+  background-color: #c7c7c7; /* Bright green for buttons */
+  color: #282c34; /* Dark text for contrast */
+  font-weight: bold;
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+  background-color: #c7c7c7; /* Accent color for hover/focus */
+  color: #ffffff;
+}
+
+/* Error messages styling */
+.form-errors p {
+  color: #e06c75; /* Bright red for errors to stand out */
+  background-color: #1a1d23; /* Consistent with the container background */
+  padding: 0.5rem;
+  border-left: 5px solid #e06c75; /* Bright red for visibility */
+  border-radius: 5px;
+}
+
+/* Notes and placeholders */
+.note,
+.placeholder {
+  background-color: #1a1d23; /* Dark background for notes */
+  color: #c7c7c7; /* Light grey text for readability */
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #c7c7c7; /* Bright blue border for notes */
+}
+
+.note p,
+.note small {
+  margin: 0;
+}
+
+/* Header and footer */
+header,
+footer {
+  text-align: center;
+  color: #c7c7c7;
+  background-color: #1a1d23; /* Consistent with the container background */
+  padding: 1rem 0;
+}
+
+/* Pagination Controls */
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination a {
+  color: #c7c7c7; /* Bright blue for pagination links */
+  text-decoration: none;
+}
+
+.pagination a:hover {
+  text-decoration: underline;
+}
+
+/* Adjustments for tablets and below */
+@media only screen and (max-width: 768px) {
+  .container,
+  textarea,
+  .submit-btn {
+    max-width: 90vw; /* Adjusts based on the viewport width */
+    box-sizing: border-box; /* Includes padding and border in the element's total width */
+    margin: 10px auto; /* Auto margins help center the elements */
+  }
+}
+
+/* Further adjustments for smaller phones */
+@media only screen and (max-width: 480px) {
+  .container,
+  textarea,
+  .submit-btn {
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+}

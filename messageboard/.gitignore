@@ -1,0 +1,43 @@
+__init__.py
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Instance configuration
+/instance/
+
+# Flask stuff
+.flaskenv
+
+# SQLite database files (if you decide to use SQLite for development)
+*.sqlite
+*.sqlite3
+
+# Pytest
+.cache
+.pytest_cache/
+
+# PyCharm project settings (if using PyCharm)
+.idea/
+
+# VS Code project settings (if using Visual Studio Code)
+.vscode/
+
+# Environment variables file (make sure not to include sensitive keys/values)
+.env
+
+# Other files
+*.log
+*.csv
+*.dat
+.DS_Store
+*.bak
+*.swp
+*.tmp
