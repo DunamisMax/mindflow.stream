@@ -27,13 +27,13 @@ To get a local copy up and running, follow these simple steps.
    `git clone https://github.com/DunamisMax/mindflow.stream.git`
 
 2. Navigate to the project directory:
-   cd mindflow.stream
+   `cd mindflow.stream`
 
 3. Install the requirements:
-   pip install -r requirements.txt
+   `pip install -r requirements.txt`
 
 4. Run the Flask application:
-   flask run
+   `flask run`
 
 Your server should now be running on `http://127.0.0.1:5000/`.
 
