@@ -41,7 +41,7 @@ def get_comments():
     total_pages = pagination.pages
 
     # Prepare the notes data for JSON response
-    notes_data = [{'id': note.id, 'text': note.text, 'created_at': note.created_at.isoformat()} for note in notes]
+    notes_data = [{'id': note.id, 'text': note.text, 'created_at': note.created_at.replace(tzinfo=timezone.utc).isoformat() if note.created_at.tzinfo is None else note.created_at.isoformat()} for note in notes]
     return jsonify({
         'notes': notes_data,
         'total_pages': total_pages,
